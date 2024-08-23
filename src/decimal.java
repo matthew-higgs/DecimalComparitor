@@ -13,8 +13,14 @@ public class decimal {
             return false;
         }
 
+
+
         double num1Check = num1 >= 0 ? Math.floor(num1) : Math.ceil(num1);
         double num2Check = num2 >= 0 ? Math.floor(num2) : Math.ceil(num2);
+
+        if (num1Check != num2Check){
+            return false;
+        }
 
         num1 -= num1Check;
         num2 -= num2Check;
